@@ -5,7 +5,7 @@ Summary(pl):	Wybór podzbioru regresji
 Name:		R-cran-%{modulename}
 Version:	2.7
 Release:	1
-License:	GPL version 2 or later
+License:	GPL v2+
 Group:		Applications/Math
 Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{version}.tar.gz
 # Source0-md5:	551d8cd9a53d2eee7c13108577910a44
