@@ -4,14 +4,14 @@ Summary:	Regression subset selection
 Summary(pl):	Wybór podzbioru regresji
 Name:		R-cran-%{modulename}
 Version:	2.7
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Applications/Math
 Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{version}.tar.gz
 # Source0-md5:	551d8cd9a53d2eee7c13108577910a44
-BuildRequires:	R-base >= 2.0.0
+BuildRequires:	R-base >= 2.4.0
 BuildRequires:	gcc-g77
-Requires(post,postun):	R-base >= 2.0.0
+Requires(post,postun):	R-base >= 2.4.0
 Requires(post,postun):	perl-base
 Requires(post,postun):	textutils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -37,12 +37,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 (cd %{_libdir}/R/library; umask 022; cat */CONTENTS > ../doc/html/search/index.txt
- R_HOME=%{_libdir}/R ../bin/Rcmd perl ../share/perl/build-help.pl --htmllist)
+ R_HOME=%{_libdir}/R ../bin/Rcmd perl ../share/perl/build-help.pl --index)
 
 %postun
 if [ -f %{_libdir}/R/bin/Rcmd ];then
 	(cd %{_libdir}/R/library; umask 022; cat */CONTENTS > ../doc/html/search/index.txt
-	R_HOME=%{_libdir}/R ../bin/Rcmd perl ../share/perl/build-help.pl --htmllist)
+	R_HOME=%{_libdir}/R ../bin/Rcmd perl ../share/perl/build-help.pl --index)
 fi
 
 %files
