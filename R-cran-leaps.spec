@@ -1,7 +1,7 @@
 %define		fversion	%(echo %{version} |tr r -)
 %define		modulename	leaps
 Summary:	Regression subset selection
-Summary(pl):	Wybór podzbioru regresji
+Summary(pl.UTF-8):   WybÃ³r podzbioru regresji
 Name:		R-cran-%{modulename}
 Version:	2.7
 Release:	2
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Regression subset selection including exhaustive search.
 
-%description -l pl
-Wybór podzbioru regresji obejmuj±cy wyczerpuj±ce wyszukiwanie.
+%description -l pl.UTF-8
+WybÃ³r podzbioru regresji obejmujÄ…cy wyczerpujÄ…ce wyszukiwanie.
 
 %prep
 %setup -q -c
