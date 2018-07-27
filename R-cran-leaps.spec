@@ -4,7 +4,7 @@ Summary:	Regression subset selection
 Summary(pl.UTF-8):	Wybór podzbioru regresji
 Name:		R-cran-%{modulename}
 Version:	2.9
-Release:	3
+Release:	4
 License:	GPL v2+
 Group:		Applications/Math
 Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{version}.tar.gz
