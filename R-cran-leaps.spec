@@ -4,10 +4,10 @@ Summary:	Regression subset selection
 Summary(pl.UTF-8):	Wybór podzbioru regresji
 Name:		R-cran-%{modulename}
 Version:	2.9
-Release:	5
+Release:	6
 License:	GPL v2+
 Group:		Applications/Math
-Source0:	ftp://stat.ethz.ch/R-CRAN/src/contrib/%{modulename}_%{version}.tar.gz
+Source0:	https://cran.r-project.org/src/contrib/%{modulename}_%{version}.tar.gz
 # Source0-md5:	ea03350869eeed25d64387402228ab09
 BuildRequires:	R >= 2.10.0
 BuildRequires:	gcc-fortran
